@@ -1,0 +1,165 @@
+@font-face {
+    font-family:'AHS' ;
+    src: url(american-horror-story_font/AmericanHorrorStory.otf) format(Opentype);
+}
+
+
+@font-face {
+    font-family: 'American';
+    src: url(hill_house_font/Hill\ House.otf) format(Opentype);
+}
+
+body, p {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+
+header {
+    display: flex;
+    padding: 10px;
+    font-family: 'AHS', Helvetica, sans-serif;
+    font-size: 30px;
+    background-image: linear-gradient(to bottom, #A30D14, #6F090D);
+    color: white;
+    justify-content: center;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+header p {
+    font-family: 'American', serif;
+    margin-bottom: 20px;
+}
+
+
+
+nav {
+    gap: 15px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px;
+    background-color: #111111;
+
+}
+
+
+
+nav p {
+    font-family: 'American', serif;
+    font-size: 16px;
+    padding: 2px;
+    
+}
+
+nav a {
+    color: #E8E3D9;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
+    background-color:#A30D14;
+    border: 1px solid #B8860B;
+
+    
+}
+
+main {
+    background-color: #E8E3D9;
+    display: flex;
+    justify-content: space-between;
+}
+
+main > section {
+    width: 70%;
+}
+
+
+main article {
+    text-align: center;
+}
+
+main h2 {
+    margin-left: 20px;
+    font-family: 'AHS', serif;
+    font-size: 42px;
+    text-align: left;
+}
+
+
+main p {
+    font-family: 'Lato', serif;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 1.6;
+}
+
+
+img {
+    width: 200px;
+    height:300px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+aside {
+    width: 15%;
+    background-color: #242121;
+    justify-content: flex-start;
+    padding: 10px;
+    
+}
+
+
+aside h2 {
+    text-align: center;
+    font-size: 20px;
+    color: #A30D14;
+    padding: 10px;
+}
+
+
+aside p {
+    color: #E8E3D9;
+    font-family: 'Lato', serif;
+    font-size: 16px;
+}
+
+aside img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0px;
+}
+
+footer {
+    background-color: #111111 ;
+    font-family: 'AHS', serif;
+    color: #E8E3D9;
+    padding: 15px;
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        width: auto;
+    }
+
+    main > section {
+        width: auto;
+    }
+}
