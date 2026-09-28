@@ -1,0 +1,193 @@
+@font-face {
+    font-family:'AHS';
+    src: url(american-horror-story_font/AmericanHorrorStory.otf) format(Opentype);
+}
+
+
+@font-face {
+    font-family: 'American';
+    src: url(hill_house_font/Hill\ House.otf) format(Opentype);
+}
+
+
+body, p {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body {
+    background-color: #E8E3D9;
+}
+
+
+header {
+    display: flex;
+    padding: 10px;
+    font-family: 'AHS', Helvetica, sans-serif;
+    font-size: 30px;
+    background-image: linear-gradient(to bottom, #A30D14, #6F090D);
+    color: white;
+    justify-content: center;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+header p {
+    font-family: 'American', serif;
+    margin-bottom: 20px;
+}
+
+
+nav {
+    gap: 15px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px;
+    background-color: #111111;
+}
+
+
+nav p {
+    font-family: 'American', serif;
+    font-size: 16px;
+    padding: 2px;
+}
+
+
+nav a {
+    color: #E8E3D9;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
+    background-color: #A30D14;
+    border: 1px solid #B8860B;
+}
+
+
+main {
+    background-color: #E8E3D9;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+
+main > section {
+    width: 70%;
+}
+
+
+main article {
+    text-align: center;
+}
+
+
+main h2 {
+    margin-left: 20px;
+    font-family: 'AHS', serif;
+    font-size: 42px;
+    text-align: left;
+}
+
+
+.form-conteudo {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+.form-grupo {
+    margin-bottom: 20px;
+}
+
+
+label {
+    font-weight: bold;
+}
+
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+input:focus, select:focus, textarea:focus {
+    border: 1px solid #A30D14;
+    outline: none;
+    box-shadow: 0px 0px 5px #A30D14;
+}
+
+
+.input-radio, .input-checkbox {
+    width: auto;
+}
+
+
+button {
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+#enviar {
+    background-color: #A30D14;
+}
+
+
+#enviar:hover {
+    background-color: #6F090D;
+}
+
+
+#limpar {
+    background-color: #111111;
+}
+
+
+#limpar:hover {
+    background-color: #242121;
+}
+
+
+#desativado {
+    background-color: #999999;
+}
+
+
+footer {
+    background-color: #111111;
+    font-family: 'AHS', serif;
+    color: #E8E3D9;
+    padding: 15px;
+    text-align: center;
+}
+
+
+@media screen and (max-width:600px) {
+    main > section {
+        width: auto;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
