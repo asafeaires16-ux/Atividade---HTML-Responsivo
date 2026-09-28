@@ -150,6 +150,42 @@ footer {
     text-align: center;
 }
 
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 30px auto;
+    font-family: 'Lato', serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+caption {
+    font-family: 'AHS', serif;
+    font-size: 30px;
+    color: #A30D14;
+    padding: 10px;
+}
+
+th {
+    background-color: #111111;
+    color: #E8E3D9;
+    padding: 10px;
+    border: 1px solid #A30D14;
+}
+
+td {
+    background-color: #242121;
+    color: #E8E3D9;
+    padding: 10px;
+    border: 1px solid #A30D14;
+}
+
+tfoot td {
+    background-color: #A30D14;
+    color: #FFFFFF;
+    font-weight: bold;
+} 
+
 @media screen and (max-width:600px) {
     main {
         flex-direction: column;
