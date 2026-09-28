@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Feedback - American Horror Story</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>American Horror Story</h1>
+        <p>Uma Enciclopedia Visual da Série</p>
+    </header>
+
+    <nav>
+        <p><a href="atividade.html">Página Inicial</a></p>
+        <p><a href="https://www.fxnetworks.com/shows/american-horror-story">Página Oficial</a></p>
+        <p><a href="https://www.imdb.com/pt/title/tt1844624/">IMDB</a></p>
+        <p><a href="#">Feedback</a></p>
+    </nav>
+
+<main>
+    <section>
+        <article>
+
+            <h2>Feedback da Enciclopédia AHS</h2>
+
+                <form class="form-conteudo" action="https://httpbin.org/post" method="post">
+
+                    <div class="form-grupo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" maxlength="50" required>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+    <div class="form-grupo">
+        <label for="temporada">Temporada favorita:</label>
+            <select id="temporada" name="temporada" required>
+                    <option value="">Selecione uma temporada</option>
+                    <option value="Murder House">Murder House</option>
+                    <option value="Asylum">Asylum</option>
+                    <option value="Coven">Coven</option>
+                    <option value="Freak Show">Freak Show</option>
+                    <option value="Hotel">Hotel</option>
+                    <option value="Roanoke">Roanoke</option>
+                    <option value="Cult">Cult</option>
+                    <option value="Apocalypse">Apocalypse</option>
+                    <option value="1984">1984</option>
+                    <option value="Double Feature">Double Feature</option>
+                    <option value="NYC">NYC</option>
+                    <option value="Delicate">Delicate</option>
+                        </select>
+    </div>
+
+    <div class="form-grupo">
+        <label>O que você mais gosta na série?</label>
+
+                <input class="input-radio" type="radio" id="historias" name="preferencia" value="Historias" required>
+                    <label for="historias">Histórias</label>
+
+                    <input class="input-radio" type="radio" id="personagens" name="preferencia" value="Personagens">
+                    <label for="personagens">Personagens</label>
+
+                        <input class="input-radio" type="radio" id="terror" name="preferencia" value="Terror">
+                            <label for="terror">Terror</label>
+
+                                <input class="input-radio" type="radio" id="estetica" name="preferencia" value="Estetica">
+                                    <label for="estetica">Estética</label>
+    </div>
+
+    <div class="form-grupo">
+                        <label for="nota">Nota para a série:</label>
+                        <input type="number" id="nota" name="nota" min="1" max="10" required>
+    </div>
+
+    <div class="form-grupo">
+                        <label for="mensagem">Deixe seu comentário:</label>
+                        <textarea id="mensagem" name="mensagem" maxlength="200"></textarea>
+    </div>
+
+    <div class="form-grupo">
+                        <input class="input-checkbox" type="checkbox" id="termos" name="termos" value="aceito" required>
+                        <label for="termos">Concordo com o envio das informações.</label>
+    </div>
+
+    <div class="form-grupo">
+                        <label for="versao">Informação do formulário:</label>
+                        <input type="text" id="versao" name="versao" value="Formulário versão 1.0" readonly>
+    </div>
+
+    <div class="form-grupo">
+                        <button id="enviar" type="submit">Enviar Feedback</button>
+                        <button id="limpar" type="button">Limpar</button>
+                        <button id="desativado" type="button" disabled>Indisponível</button>
+    </div>
+
+                </form>
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>American Horror Story - BRASIL</p>
+    </footer>
+
+</body>
+</html>
